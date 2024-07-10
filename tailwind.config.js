@@ -10,7 +10,8 @@ module.exports = {
       fontFamily: {
           'Krub':'Krub',
           'Rubik': 'Rubik',
-          'Poppins':'Poppins'
+          'Poppins':'Poppins',
+          'League+spartan': 'League+spartan',
       },
         
       fontSize : {
@@ -34,6 +35,8 @@ module.exports = {
           lightgrey: '#091242',
           black : '#1C1F35',
           lightgrey2 : '#E8E8E8',
+          blue : '#4E5683',
+          grey2 : '#FFFFFF',
           
       }
     },

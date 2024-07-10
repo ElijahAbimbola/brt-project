@@ -11,10 +11,28 @@ import region from '../Components/images/region.png'
 import air from '../Components/images/air.png'
 import bus from '../Components/images/bus.jpg'
 import vehicles from '../Components/images/vehicles.png'
+import { PiMoneyLight } from "react-icons/pi";
+import counter from '../Components/images/Counter.png'
+import one from '../Components/images/1.png'
+import two from '../Components/images/2.png'
+import three from '../Components/images/3.png'
+import four from '../Components/images/4.png'
+import five from '../Components/images/5.png'
+import time from '../Components/images/time.png'
+import cost from '../Components/images/cost.png'
+import project from '../Components/images/Project.png'
+import { BsClock } from "react-icons/bs";
+import { CiMail } from "react-icons/ci";
+import { LuPhone } from "react-icons/lu";
+import { InputFieldPrimary, InputFieldSecondary } from '../Components/InputField'
+import submit from '../Components/images/Button.png'
+import client from '../Components/images/Client Logo.png'
+import truck from '../Components/images/truck.png'
+import Footer from '../Layout/Footer'
 
 const Home = () => {
   return (
-    <div className='m-0 w-full h-full '>
+    <div className=' '>
       < Navbar />
       < Header />
          <div>
@@ -34,8 +52,8 @@ const Home = () => {
               </div>  
           </div>
           {/* safe and rekiable */}
-          <div >
-          <div className='flex' >
+          <div className='py-10 ' >
+          <div className='flex justify-center ' >
             <div>
             <div className='flex'>
               <img src={what} alt="" />
@@ -61,32 +79,131 @@ const Home = () => {
           </div>
           </div>
           {/* img */}
-          <div className='w-[1500px]  bg-contain text-center bg-no-repeat '>
-            <img src={bus} alt="" />
-          <div className='bg-white flex justify-center '>
-            <div>
-            <div className='flex'>
+          <div className='brt w-[1500px]  bg-contain text-center bg-no-repeat '>
+            {/* <img src={bus} alt="" /> */}
+         <section className=' pt-72  w-[1000]'> <div className= 'flex justify-center    '>
+            <div className='bg-white flex '>
+              <div className='pl-14 pt-12'>
+            <div className='flex '>
               <img src={what} alt="" />
               <div className='bg-lightgrey2 w-20'>
                 <h3 className='text-xsm font-Rubik font-light text-black ' >Why Us</h3>
               </div>
             </div>
             <div>
-                <div> <h2 className='text-black font-rubik text-md font-semibold text-start '>We provide full range Local <br /> and Inter-State <br /> transportation  solution</h2></div>
-                <h3 className='font-Krub font-medium text-black text-sm text-start' >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br /> do eiusmod tempor incididunt ut labore et dolore magna <br /> aliqua. </h3>
+                <div> <h2 className='text-black font-Rubik leading-10 text-md font-semibold text-start '>We provide full range Local <br /> and Inter-State <br /> transportation  solution</h2></div>
+                <h3 className='font-Krub font-medium text-black text-sm text-start pt-3' >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br /> do eiusmod tempor incididunt ut labore et dolore magna <br /> aliqua. </h3>
             </div>
             {/* icons */}
-            <div> 
-              
+            <div className='text-start'> 
+              <div className='flex space-x-5 pt-3'>
+                <img src={time} alt="" />
+                <h2 className='font-Rubik font-normal text-smd pt-2'>Arriving on Time</h2>
+              </div>
+              <div className='flex space-x-5 pt-3'>
+                <img src={cost} alt="" />
+                <h2 className='font-Rubik font-normal text-smd pt-2'>Optimized Travel Cost</h2>
+              </div>
             </div>
             </div>
-            <div>
+             <div className='w-[513px] pt-16 pr-14'>
               <img src={vehicles} alt="" />
             </div>
+            
             </div>
+            </div>
+             <div className='flex pt-20 justify-center text-center'>
+              <img src={counter} alt="" />
+            </div>
+            </section>
+          </div>
+          
+          {/* <div>
+          <div className='text-md font-Rubik font-semibold text-center text-black pt-32 pl-72 mb-10'>
+            <p>Transporting Across the Lagos State</p>
+          </div>
+        
+          <div className='content w-[1500px] bg-contain text-center'>
+           
+              <div className='flex  justify-center space-x-2 pb-40 px-40 w-[1500px] '> 
+                 <img src={one} className=' ' />
+                 <img src={two} className='w-80 h-[407px]'  />
+                  <img src={three} className='w-80 h-[407px]'  />
+                  <img src={four}className='w-80 h-[407px]' />
+                  <img src={five} className='w-80 h-[407px]'  />
+              </div>
+          </div>
+          </div> */}
+
+          <div className='w-[1500px] pt-20'>
+            <img src={project} alt="" />
           </div>
          </div>
-      
+       <div className='bg-Navyblue w-[1500px] '>
+        {/* get */}
+        <div className='pt-20 pl-64 flex space-x-28'>
+          <div>
+             <div className='flex '>
+              <img src={what} alt="" />
+              <div className='bg-lightgrey2 w-20 bg-opacity-10'>
+                <h3 className='text-xsm font-Rubik font-light  text-white p-0 ' >Contact</h3>
+              </div>
+              </div>
+               <div>
+                <div> <h2 className='text-white font-Rubik  text-md font-semibold text-start pb-1  '>Get in touch with us</h2></div>
+                <h3 className='font-Krub font-medium text-lightgrey2 text-sm text-start ' >"Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit, sed  do eiusmod tempor <br /> incididunt ut labore et dolore magna  aliqua. </h3>
+            </div>
+               <ul className='space-y-5 pt-5'>
+               
+                 <li>
+                    <div className=' flex space-x-2'>
+                 <button className='rounded-full p-3 bg-Navyblue2'> < CiMail className=' text-Orange w-5 h-5 ' /></button>
+                     <div className='text-white bg-Navyblue font-Krub text-xsm font-medium'><section className='text-start'>Email</section> <section className='text-start'>contact@transitflow.com</section></div></div>
+                </li>
+
+                 <li>
+                    <div className='flex space-x-2'>
+                 <button className='rounded-full p-3 bg-Navyblue2'> < LuPhone className=' text-Orange w-5 h-5  ' /></button>
+                     <div className='text-white bg-Navyblue font-Krub text-xsm font-medium'><section className='text-start'>Contact </section> <section className='text-start'>(+234) 802 384 6669</section></div></div>
+                </li>
+
+                 <li>
+                    <div className='flex space-x-2 '>
+                <button className='rounded-full p-3 bg-Navyblue2'> < BsClock className=' text-Orange  w-5 h-5' /></button>
+                     <div className='text-white bg-Navyblue font-Krub text-xsm font-medium'><section className='text-start'>Mon-Sat 9:00-18:00</section>  <section className='text-start'>Sunday Closed</section></div></div>
+                </li>
+               </ul>
+               </div>
+               {/* imputfield */}
+               <div className='pt-10'> 
+                <div className='space-x-5'>
+                  < InputFieldPrimary placeholder={ 'Your name*' } />
+                  < InputFieldPrimary placeholder={ 'Email*' } />
+                </div>
+                   <div className='space-x-5 pt-5'>
+                  < InputFieldPrimary placeholder={ 'Phone Number*' } />
+                  < InputFieldPrimary placeholder={ 'City*' } />
+                </div>
+                <div className='pt-5 '>
+                  < InputFieldSecondary placeholder={'Your Message'} />
+                </div>
+                <div  className='pt-5 w-40'>
+                  {/* <YellowHomeButton name={'Submit Message'} /> */}
+                  <img src={submit} alt="" />
+                </div>
+               </div>
+            </div >
+            {/* clients */}
+            <div className='pl-64 pt-10 w-[1220px]'>
+            <img src={client} alt="" />
+            
+       </div>
+       {/* truck */}
+       <div className='w-[1500px] pt-20 '>
+        <img src={truck} alt="" />
+       </div>
+       </div>
+       <Footer />
     </div>
   )
 }

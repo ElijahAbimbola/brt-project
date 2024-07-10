@@ -4,11 +4,16 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { IoLogoFacebook } from "react-icons/io5";
 import { RiTwitterFill } from "react-icons/ri";
 import { IoLogoLinkedin } from "react-icons/io5";
+import menu from '../Components/images/Menu.png'
 
 const Header = () => {
   return (
     <div>
-         <div className=' header  w-[1500px]  text-white font-Krub text-sm font-semibold '>
+
+        <div className='w-[1500px] pt-0 -mt-2'>
+            <img src={menu} alt="" />
+        </div>
+         {/* <div className=' header  w-[1500px]  text-white font-Krub text-sm font-semibold '>
             <div className=' flex space-x-40 '>
                 <ul className='flex space-x-7 pt-5 pl-64'>
                     <li className=''>Home </li>   
@@ -28,7 +33,7 @@ const Header = () => {
                 </div>
                 </ul>
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }
