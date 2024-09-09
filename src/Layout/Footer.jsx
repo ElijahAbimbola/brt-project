@@ -5,14 +5,14 @@ import send from '../Components/images/send.png'
 
 const Footer = () => {
   return (
-    <div className='w-[1500px] '>
-        <div className='flex space-x-10 bg-Navyblue bg-opacity-90'>
+    <div className='w-full h-full bg-Navyblue py-20 '>
+        <div className='flex space-x-10  bg-opacity-90'>
             <div className='bg-Navyblue py-5 ml-60 pl-10 pr-20 '>
                 <img src={logo} alt="" />
             </div>
             <ul className='flex justify-between font-Rubik font-medium text-smd text-white py-5 space-x-24'>
                 <li>Pages</li>
-                <li>Utility</li>
+                {/* <li>Utility</li> */}
                 <li>Subscribe</li>
             </ul>
         </div>
@@ -28,11 +28,11 @@ const Footer = () => {
                 <li>Contacts</li>
                </ul>
             </div>
-            <div className='text-white'>
+            {/* <div className='text-white'>
                 <ul>
                     <li>Not Found</li>
                 </ul>
-            </div>
+            </div> */}
             <div>
                 <InputField placeholder={'Email here*'}/>
                 <img src={send} className='w-32 h-10 mt-5' />

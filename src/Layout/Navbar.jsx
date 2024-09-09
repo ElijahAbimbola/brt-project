@@ -1,35 +1,33 @@
 import React from 'react'
 import logo from '../Components/images/Logo.png'
-import { BsClock } from "react-icons/bs";
-import { CiMail } from "react-icons/ci";
-import { LuPhone } from "react-icons/lu";
+import { OrangeButton } from '../Components/Button';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
   return (
-    <div>
-        <div className=' h-full bg-cover w-[1500px] bg-Navyblue '>
-                <div className=' flex space-x-40 px-48  '>
-               <div className='pl-14  py-10'> <img src={logo} className='w-52 h-9'  /></div>
-              <ul className='flex  py-10  space-x-10'>
-                <li>
-                    <div className='flex space-x-2 '>
-                <button className='rounded-full p-3 bg-Navyblue2'> < BsClock className=' text-Orange  w-5 h-5' /></button>
-                     <div className='text-white bg-Navyblue font-Krub text-xsm font-medium'><section className='text-start'>Mon-Sat 9:00-18:00</section>  <section className='text-start'>Sunday Closed</section></div></div>
-                </li>
-
-                 <li>
-                    <div className=' flex space-x-2'>
-                 <button className='rounded-full p-3 bg-Navyblue2'> < CiMail className=' text-Orange w-5 h-5 ' /></button>
-                     <div className='text-white bg-Navyblue font-Krub text-xsm font-medium'><section className='text-start'>Email</section> <section className='text-start'>contact@transitflow.com</section></div></div>
-                </li>
-
-                 <li>
-                    <div className='flex space-x-2'>
-                 <button className='rounded-full p-3 bg-Navyblue2'> < LuPhone className=' text-Orange w-5 h-5  ' /></button>
-                     <div className='text-white bg-Navyblue font-Krub text-xsm font-medium'><section className='text-start'>Contact </section> <section className='text-start'>(+234) 802 384 6669</section></div></div>
-                </li>
+    <div className='bg-Navyblue'>
+        <div className=' h-full bg-cover w-full py-10  '>
+                <div className=' flex space-x-20 justify-center  '>
+               <div className='  '> <img src={logo} className='w-52 h-9'  /></div>
+              <ul className='flex space-x-10 text-white font-Krub font-semibold text-sm divide-x-2 h-[22px] w-[] divide-y-0  divide-gray-700 '>
+                <Link to='/'>
+                <li className=' px-3'>Home</li>
+                </Link>
+             <Link to='/AboutUs'>
+                <li className='px-5' >About</li>
+                </Link>
+                <Link to='/Services' >
+                 <li className='px-5'>Services</li>
+                 </Link>
+                  <Link to='/Shedule a trip' >
+                 <li className='px-5'>Schedule a trip</li>
+                 </Link>
+                 <Link to='/Contacts ' >
+                 <li className='px-5'>Contact</li>
+                 </Link>
               </ul>
+              <OrangeButton name={'SIGN IN'}  />
                 </div>
         
        
